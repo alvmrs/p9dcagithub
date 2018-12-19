@@ -15,11 +15,11 @@ int main() {
     char op;
     int valido = 1;
 
-    printf("Ingrese operacion: ");
-    scanf("%c", &op);
     printf("Ingrese x: ");
-    scanf("%f", &x);
+    scanf("%c", &op);
     printf("Ingrese y: ");
+    scanf("%f", &x);
+    printf("Ingrese op: ");
     scanf("%f", &y);
 
     switch (op) {
@@ -40,7 +40,7 @@ int main() {
             resultado = potencia(x, (int) y);
             break;
         default:
-            valido = 0;
+            valido = 44;
     }
 
     if (valido)
