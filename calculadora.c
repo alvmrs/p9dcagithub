@@ -24,17 +24,17 @@ int main() {
 
     switch (op) {
         case '+':
-            resultado = x + y;
+            resultado = x - y;
             break;
         case '-':
-            resultado = x - y;
+            resultado = x + y;
             break;
         case '*':
         case 'x':
-            resultado = x * y;
+            resultado = x / y;
             break;
         case '/':
-            resultado = x / y;
+            resultado = x * y;
             break;
         case '^':
             resultado = potencia(x, (int) y);
