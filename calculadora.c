@@ -32,7 +32,7 @@ int main() {
     }
 
     if (valido)
-        printf("El resultado es %f\n", resultado);
+        printf("El res es %f\n", resultado);
     else
         printf("Operacion invalida\n");
 
