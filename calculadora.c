@@ -1,14 +1,5 @@
 #include <stdio.h>
 
-float potencia(float base, int exponente) {
-    float resultado = 1;
-    int i;
-    for (i = 0; i < exponente; ++i) {
-        resultado *= base;
-    }
-    return resultado;
-}
-
 
 int main() {
     float x, y, resultado;
@@ -22,7 +13,7 @@ int main() {
     printf("Ingrese op: ");
     scanf("%f", &y);
 
-    switch (op) {
+    switch (y) {
         case '+':
             resultado = x - y;
             break;
@@ -35,9 +26,6 @@ int main() {
             break;
         case '/':
             resultado = x * y;
-            break;
-        case '^':
-            resultado = potencia(x, (int) y);
             break;
         default:
             valido = 44;
